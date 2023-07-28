@@ -927,3 +927,275 @@ body {
 .sale .slide-control {
   margin-top: 100px;
 }
+/* 신상품 */
+.new {
+  position: relative;
+  display: block;
+}
+.new .section-bt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.new-wrap {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 50px;
+}
+.new-left {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: left;
+}
+.new-img {
+  position: relative;
+  display: block;
+  height: 370px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.new-title {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.new-txt {
+  position: relative;
+  display: block;
+  font-size: 17px;
+}
+.new-right {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+  float: right;
+}
+.new-box {
+  position: relative;
+  display: block;
+  width: calc(50% - 8px);
+}
+.new-box-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.new-box-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 102%;
+}
+.new-box-title {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  /* 말줄임 ...처리 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* 홀수는 float:left */
+.new-right .new-box:nth-child(2n + 1) {
+  float: left;
+}
+/* 짝수는 float:right */
+.new-right .new-box:nth-child(2n) {
+  float: right;
+}
+/* 추천물품  */
+.recommend {
+  position: relative;
+  display: block;
+  background-color: #fff8fa;
+}
+.recommend .section-title-txt {
+  font-size: 17px;
+  border-bottom: 2px solid #76bd42;
+  display: inline-block;
+}
+.blue {
+  color: #76bd42;
+}
+/* 인기물품 */
+.popular {
+  position: relative;
+  display: block;
+}
+.popular-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 34px;
+  padding: 0 20px;
+  border: 1px solid #bbb;
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  background-color: #fff;
+  transition: background 0.5s;
+}
+.popular-more:hover {
+  background: #f9f9f9;
+}
+.popular-cate {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+}
+.popular-slide-prev,
+.popular-slide-next {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 140px;
+  background-color: #fff;
+}
+.popular-slide-prev {
+  float: left;
+}
+.popular-slide-prev span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 20px;
+  background: url("../images/swiperArrP.png") no-repeat;
+  background-position: 0px 0px;
+  font-size: 0;
+  cursor: pointer;
+}
+.popular-slide-prev span:hover {
+  background-position: 0px -20px;
+}
+.popular-slide-next span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 20px;
+  background: url("../images/swiperArrN.png") no-repeat;
+  background-position: 0px 0px;
+  font-size: 0;
+  cursor: pointer;
+}
+.popular-slide-next span:hover {
+  background-position: 0px -20px;
+}
+.popular-slide-next {
+  float: right;
+}
+.popular-slide {
+  position: relative;
+  display: block;
+  width: calc(100% - 80px - 80px);
+  height: 140px;
+  float: left;
+}
+.popular-slide a {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 140px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.popular-slide a:hover {
+  background-color: #fff;
+  border: 1px solid #76bd42;
+}
+.popular-cate-icon {
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 64px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.popular-cate-name {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  white-space: nowrap;
+}
+/* 브랜드 */
+.brand {
+  position: relative;
+  display: block;
+  background-color: #f3f9f0;
+}
+.brand .slide-control {
+  margin-top: 25px;
+}
+.brand-slide {
+  position: relative;
+  display: block;
+}
+.brand-box {
+  position: relative;
+  display: block;
+  width: 285px;
+  height: 285px;
+  background-color: #fff;
+  padding: 35px 30px;
+}
+.brand-box a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.brand-box a img {
+  position: relative;
+  display: inline-block;
+}
+.brand-box a p {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.brand-info {
+  position: relative;
+  display: block;
+}
+.brand-info > li {
+  position: relative;
+  display: block;
+  width: 50%;
+  border-right: 1px solid #e3e3e3;
+  float: left;
+}
+.brand-info > li:last-child {
+  border-right: 0;
+}
+.brand-info-title {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+.brand-info-value {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
